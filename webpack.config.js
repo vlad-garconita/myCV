@@ -15,6 +15,8 @@ const paths = {
 const favicon = path.resolve(paths.source, 'images', 'favicon.ico');
 const myHeader = fs.readFileSync(paths.source + '/views/header.html');
 const myBanner = fs.readFileSync(paths.source + '/views/banner.html');
+const myAbout = fs.readFileSync(paths.source + '/views/about.html');
+const myContact = fs.readFileSync(paths.source + '/views/contact.html');
 const myFooter = fs.readFileSync(paths.source + '/views/footer.html');
 module.exports = {
     stats: {
@@ -33,6 +35,8 @@ module.exports = {
             hash: true,
             favicon: favicon,
             myHeader: myHeader,
+            myAbout: myAbout,
+            myContact: myContact,
             myBanner: myBanner,
             myFooter: myFooter,
             template: './src/index.html',
